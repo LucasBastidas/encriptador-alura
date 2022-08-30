@@ -63,7 +63,7 @@ function desencriptarTexto(texto) {
 		if (input.value != "") {
 			imagenResultado.style.display = "none";
 			copyButton.style.display = "block";
-			resultado.textContent = desencriptarTexto(input.value);
+			resultado.textContent = desencriptarTexto(input.value).lowerCase;
 		} else {
 			alert("No escribiste nada.");
 		}
