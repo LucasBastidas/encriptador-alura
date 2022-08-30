@@ -5,11 +5,46 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./index.css">
+   <script defer src="./index.js"></script>
    <title>Encriptador Alura</title>
 </head>
 
 <body>
+   <header>
+      <img src="./assets/LogoAlura.png" alt="">
+   </header>
+   <main class="gral-cont">
 
+      <section class="form-encriptador-cont">
+         <form class="form-encriptador">
+
+            <div>
+               <textarea class="form-encriptador__input" name="texto" type="text"
+                  placeholder="Ingrese texto aquí"></textarea>
+            </div>
+
+         </form>
+         <h4>Solo letras en minusculas</h4>
+         <div class="buttons-cont">
+            <button class="form-encriptador__button-encriptador">Encriptar</button>
+            <button class="form-encriptador__button-desencriptador">Desencriptar</button>
+         </div>
+      </section>
+
+      <section class="resultado-cont">
+         <div class="resultado-image-cont">
+            <img class="resultado-image" src="./assets/Muñeco.png" alt="">
+         </div>
+
+         <div>
+            <div id="result" class="resultado">No hay mensajes</div>
+         </div>
+         <div>
+            <button class="copy-button">Copiar</button>
+         </div>
+      </section>
+   </main>
 </body>
 
 </html>
