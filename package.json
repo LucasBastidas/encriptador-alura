@@ -2,11 +2,9 @@
 "version": "1.0.0",
 "license": "MIT",
    "dependencies": {
-      "gh-pages": "^4.0.0",
       "live-server": "^1.2.2"
    },
    "scripts": {
-      "dev": "live-server",
-      "deploy": "gh-pages -d src"
+      "dev": "live-server"
    }
 }
