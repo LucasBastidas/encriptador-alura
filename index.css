@@ -1,0 +1,160 @@
+*{box-sizing: border-box;}
+
+body{
+   margin: 0;
+   background-color: #EFF1FA;
+}
+
+.gral-cont{
+   display: flex;
+   
+   flex-direction: column;
+   
+   align-items: center;
+}
+
+@media (min-width:960px){
+   .gral-cont{
+      flex-direction: row;
+      justify-content: space-around;
+      height: 100%;
+   }
+}
+
+header{
+
+   padding: 15px;
+   height: 80px;
+}
+
+@media (min-width:960px){
+   header{
+         padding: 25px;
+         height: 150px;
+   }
+}
+
+.form-encriptador-cont{
+   width: 60%;
+}
+
+@media (min-width:960px){
+   .form-encriptador-cont{
+      width: 60%;
+   }
+}
+
+.form-encriptador__input{
+   border: none;
+   background-color: #EFF1FA;
+   width: 100%;
+   height: 250px;
+   font-size: 20px;
+   text-transform:lowercase;
+}
+
+@media (min-width:960px){
+   .form-encriptador__input{
+   height: 450px;
+   font-size: 30px;
+   }
+}
+
+.buttons-cont{
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 5px;
+}
+
+@media (min-width:960px){
+   .buttons-cont{
+   margin-bottom: 10px;
+   }
+}
+
+.form-encriptador__button-encriptador{
+   background-color: #052051;
+   color: white;
+   border: none;
+   border-radius: 30px;
+   padding: 10px;
+   width: 300px;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+@media (min-width:960px){
+   .form-encriptador__button-encriptador{
+   padding: 20px;
+   margin-bottom: 10px;
+   }
+}
+
+.form-encriptador__button-desencriptador{
+   background-color: #05205100;
+   color: #052051;
+   border: 1px solid #052051 ;
+   border-radius: 30px;
+   padding: 10px;
+   width: 300px;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+@media (min-width:960px){
+   .form-encriptador__button-desencriptador{
+   padding: 20px;
+   margin-bottom: 10px;
+   }
+}
+
+.resultado-cont{
+   justify-content: center;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 60%;
+   font-size: 25px;
+   height: 60%;
+   background-color: white;
+   border-radius: 30px;
+   margin-top: 30px
+}
+
+@media (min-width:960px){
+   .resultado-cont{
+   width: 25%;
+   height: 600px;
+   }
+}
+
+.resultado-image-cont{
+   width: 100%;
+}
+
+.resultado-image{
+   width: 100%;
+}
+
+@media (min-width:960px){
+   .resultado-image{
+      width: 75%;
+   }
+}
+
+.copy-button{
+   background-color: #052051;
+   color: white;
+   border: none;
+   border-radius: 30px;
+   padding: 20px;
+   width: 200px;
+   margin-top:20px;
+   margin-bottom: 10px;
+   display: none;
+   font-weight: bold;
+   cursor: pointer;
+   position: relative;
+   top: 100px;
+}
