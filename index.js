@@ -34,9 +34,9 @@ function encriptarTexto(texto) {
 	for (let i = 0; i < arrayKeys.length; i++) {
 		if (texto.includes(arrayKeys[i][0])) {
 			texto = texto.replaceAll(arrayKeys[i][0], arrayKeys[i][1]);
+			console.log(texto);
 		}
 	}
-	console.log(texto);
 	return texto;
 }
 
@@ -44,6 +44,7 @@ function desencriptarTexto(texto) {
 	for (let i = 0; i < arrayKeys.length; i++) {
 		if (texto.includes(arrayKeys[i][1])) {
 			texto = texto.replaceAll(arrayKeys[i][1], arrayKeys[i][0]);
+			console.log(texto);
 		}
 	}
 	return texto;
@@ -54,7 +55,7 @@ function desencriptarTexto(texto) {
 		if (input.value != "") {
 			imagenResultado.style.display = "none";
 			copyButton.style.display = "block";
-			resultado.textContent = encriptarTexto(input.value);
+			resultado.textContent = encriptarTexto(input.value).toLowerCase();
 		} else {
 			alert("No escribiste nada.");
 		}
@@ -63,7 +64,7 @@ function desencriptarTexto(texto) {
 		if (input.value != "") {
 			imagenResultado.style.display = "none";
 			copyButton.style.display = "block";
-			resultado.textContent = desencriptarTexto(input.value).lowerCase;
+			resultado.textContent = desencriptarTexto(input.value).toLowerCase();
 		} else {
 			alert("No escribiste nada.");
 		}
