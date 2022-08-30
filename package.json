@@ -1,7 +1,10 @@
 {
    "dependencies": {
+      "gh-pages": "^4.0.0",
       "live-server": "^1.2.2"
-   },"scripts": {
-      "dev":"live-server"
+   },
+   "scripts": {
+      "dev": "live-server",
+      "deploy": "gh-pages"
    }
 }
